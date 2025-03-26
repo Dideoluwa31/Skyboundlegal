@@ -25,6 +25,24 @@ const teamMembers = [
     img: "/path-to-image3.jpg",
     bio: "Passionate about law and committed to serving clients with excellence.",
   },
+  {
+    name: "MOHAMMED IBRAHIM IQBAL",
+    role: "Trainee Solicitor",
+    img: "/path-to-image3.jpg",
+    bio: "Passionate about law and committed to serving clients with excellence.",
+  },
+  {
+    name: "MOHAMMED IBRAHIM IQBAL",
+    role: "Trainee Solicitor",
+    img: "/path-to-image3.jpg",
+    bio: "Passionate about law and committed to serving clients with excellence.",
+  },
+  {
+    name: "MOHAMMED IBRAHIM IQBAL",
+    role: "Trainee Solicitor",
+    img: "/path-to-image3.jpg",
+    bio: "Passionate about law and committed to serving clients with excellence.",
+  },
 ];
 
 const TeamCarousel = () => {
@@ -46,14 +64,14 @@ const TeamCarousel = () => {
       {/* Custom Navigation Arrows */}
       <button
         ref={prevRef}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue-100 text-gray-900 p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
       >
-        <FaChevronLeft />
+        <FaChevronLeft /> 
       </button>
 
       <button
         ref={nextRef}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue-100 text-gray-900 p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
       >
         <FaChevronRight />
       </button>
@@ -82,10 +100,10 @@ const TeamCarousel = () => {
                 alt={member.name}
                 className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h3 className="text-white text-xl font-semibold">{member.name}</h3>
-                <p className="text-gray-300 text-sm">{member.role}</p>
-                <p className="text-gray-200 mt-2">{member.bio}</p>
+              <div className="absolute inset-0 bg-gray-200 bg-opacity-70 flex flex-col items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h3 className="text-gray-900 text-xl font-semibold">{member.name}</h3>
+                <p className="text-gray-700 text-sm">{member.role}</p>
+                <p className="text-gray-700 mt-2">{member.bio}</p>
               </div>
             </div>
           </SwiperSlide>
