@@ -41,7 +41,7 @@ const teamMembers = [
   {
     name: "MOHAMMED IBRAHIM IQBAL",
     role: "Trainee Solicitor",
-    img: "/path-to-image3.jpg",
+    img: "/",
     bio: "Passionate about law and committed to serving clients with excellence.",
   },
 ];
@@ -62,7 +62,7 @@ const TeamCarousel = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 relative">
-      {/* Custom Navigation Arrows */}
+      
       <button
         ref={prevRef}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue-100 text-gray-900 p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
@@ -90,7 +90,7 @@ const TeamCarousel = () => {
           1024: { slidesPerView: 3 },
         }}
         navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
-        onSwiper={(swiper) => (swiperRef.current = swiper)} // Store swiper instance
+        onSwiper={(swiper) => (swiperRef.current = swiper)} 
         className="relative"
       >
         {teamMembers.map((member, index) => (

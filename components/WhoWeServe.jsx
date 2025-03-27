@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import SectorList from "../app/sectors/SectorList"
 
 const WhoWeServe = () => {
   const carouselRef = useRef(null);
@@ -15,14 +16,14 @@ const WhoWeServe = () => {
     const scroll = () => {
       if (carouselRef.current) {
         if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth - carouselRef.current.clientWidth) {
-          carouselRef.current.scrollLeft = 0; // Reset to start for infinite loop
+          carouselRef.current.scrollLeft = 0; 
         } else {
           carouselRef.current.scrollBy({ left: 1, behavior: "smooth" });
         }
       }
     };
     
-    const interval = setInterval(scroll, 20); // Adjust speed here
+    const interval = setInterval(scroll, 20);
 
     return () => clearInterval(interval);
   }, []);
@@ -38,10 +39,10 @@ const WhoWeServe = () => {
           <span className="font-bold text-gray-900"> Our Key Industry Sectors Include:</span>
         </p>
 
-        {/* Auto-scrolling Carousel */}
+        
         <div className="relative mt-6 overflow-hidden w-full">
           <div ref={carouselRef} className="flex space-x-4 py-2 animate-scroll overflow-hidden whitespace-nowrap">
-            {sectors.concat(sectors).map((sector, index) => ( // Duplicate array for seamless looping
+            {sectors.concat(sectors).map((sector, index) => ( 
               <button key={index} className="bg-blue-900 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition whitespace-nowrap">
                 {sector}
               </button>
@@ -49,12 +50,13 @@ const WhoWeServe = () => {
           </div>
         </div>
 
-        {/* View All Sectors Button */}
-        <Link to="/sectors">
-          <button className="mt-6 bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg">
-            View All Sectors →
-          </button>
-        </Link>
+        <div>
+          <Link href="../">
+            <button className="mt-6 bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg">
+              View All Sectors →
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
     

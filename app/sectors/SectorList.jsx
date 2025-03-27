@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+"use client";
+import Link from "next/link"; 
 
 const sectors = [
   {
@@ -43,7 +44,7 @@ const sectors = [
   },
 ];
 
-const SectorsList = () => {
+const SectorList = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 py-12 px-6">
       <div className="max-w-5xl mx-auto">
@@ -53,12 +54,11 @@ const SectorsList = () => {
             <div key={index} className="bg-white shadow-lg rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-2">{sector.name}</h3>
               <p className="text-gray-700">{sector.description}</p>
-              
             </div>
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link to="/">
+          <Link href="/"> 
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
               ← Back to Home
             </button>
@@ -69,4 +69,4 @@ const SectorsList = () => {
   );
 };
 
-export default SectorsList;
+export default SectorList;

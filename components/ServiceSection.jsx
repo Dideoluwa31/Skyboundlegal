@@ -7,10 +7,10 @@ const ServicesSection = () => {
   return (
     <section id="services" className="py-12 px-4 bg-white text-gray-900">
       <div className="max-w-6xl mx-auto text-center">
-        {/* Subheading (No Underline) */}
+        
         <h2 className="text-lg text-gray-600 uppercase tracking-wide">Area Of Practice</h2>
 
-        {/* Main Heading */}
+        
         <h3 className="text-3xl font-semibold mt-2">Our Services</h3>
       </div>
 
@@ -24,11 +24,11 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            {/* Arrow Container (Without Line) */}
+            
             <div className="relative flex items-center">
               <motion.div
                 className="flex items-center group"
-                whileHover={{ x: 10 }} // Moves arrow on hover
+                whileHover={{ x: 10 }} 
               >
                 <div className="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full">
                   <FaArrowRight className="text-gray-600" />
@@ -36,7 +36,7 @@ const ServicesSection = () => {
               </motion.div>
             </div>
 
-            {/* Service Info with Underline */}
+            
             <div>
               <h4 className="text-xl font-semibold relative inline-block">
                 {service.title}

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Menu } from "lucide-react";
-import ServicesSection from "@/component/ServiceSection";
+import ServicesSection from "@/components/ServiceSection";
 import services, {sevices} from "../data/sevices"
 import { useState, useEffect } from "react";
 import Navbar from "./navcomponents/Navbar";
@@ -9,13 +9,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { LiaUserTieSolid } from "react-icons/lia";
 import { GoLaw } from "react-icons/go";
-import Footer from "../component/footer";
-import TeamCarousel from "../component/TeamCarousel"
+import Footer from "../components/footer";
+import TeamCarousel from "../components/TeamCarousel"
 import { LiaUsersSolid } from "react-icons/lia";
-import SectorsList from "../data/SectorsList";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import WhoWeServe from "../component/whoWeServe";
-
+import WhoWeServe from "../components/WhoWeServe";
 
 
 
@@ -26,30 +23,19 @@ export default function HomePage() {
     <div>
       <div className="h-screen bg-img-homepage">
         <div className="w-full min-h-screen bg-gray-100">
-          {/* Navbar */}
+          
           <div>
               <Navbar />
           </div>
 
           
-          {/* Hero Section */}
-          <header className="relative bg-cover bg-center h-screen flex items-center">
-              <div className="absolute inset-0">
-                <Image 
-                  src="/bg-imgs/legal.jpg" 
-                  alt="legal" 
-                  fill
-                  sizes="100vw"
-                  className="object-cover"
-                />
-              </div>
-            <div className="absolute inset-0 bg-black bg-opacity-50"> 
-              
-            </div>
-            <div className="relative z-10 max-w-4xl mx-auto text-center text-white px-4">
-              <h1 className="text-4xl md:text-5xl font-bold">Ensuring Clients Come First</h1>
+          
+          <header className="header">
+            <div className="header-overlay"></div>
+            <div className="header-content">
+              <h1 className="header-title">Transform Your Business with Our Expert Solutions</h1>
               <p className="mt-4 text-lg">Every Case, Every Time</p>
-              <button className="mt-6 bg-yellow-500 text-black px-6 py-3 font-semibold rounded-lg shadow-md hover:bg-yellow-600">
+              <button className="header-button">
                 Get Free Case Evaluation
               </button>
             </div>
@@ -124,13 +110,7 @@ export default function HomePage() {
 
       
       <div>
-        {/* View All Sectors Button */}
-        <Router>
-          <Routes>
-            <Route path="/" element={<WhoWeServe />} />
-            <Route path="/sectors" element={<SectorsList />} />
-          </Routes>
-        </Router>
+        <WhoWeServe/>
       </div>
       
     
