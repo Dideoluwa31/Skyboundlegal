@@ -11,7 +11,7 @@ const ServicesSection = () => {
         <h2 className="text-lg text-gray-600 uppercase tracking-wide">Area Of Practice</h2>
 
         
-        <h3 className="text-3xl font-semibold mt-2">Our Services</h3>
+        <h3 className="text-3xl text-blue-900 font-semibold mt-2">Our Services</h3>
       </div>
 
       <div className="mt-12 max-w-6xl mx-auto grid md:grid-cols-2 gap-8">

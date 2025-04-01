@@ -96,7 +96,7 @@ export default function HomePage() {
           alt="prof man"></Image>
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0 md:pl-12 text-center md:text-left">
-          <h2 className="text-3xl font-semibold text-gray-800">About Us</h2>
+          <h2 className="text-3xl font-semibold text-blue-900">About Us</h2>
           <p className="text-gray-600 mt-4">
           Client satisfaction comes first at Skybound International Solicitors and Legal Services. Our expert
           solicitors stay up-to-date to offer unparalleled service in
@@ -107,9 +107,15 @@ export default function HomePage() {
           25+ years of experience, tackling the toughest cases with victorious
           outcomes.
           </p>
-          <button className="mt-6 px-6 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-500 hover:text-white">
-          Learn More
-          </button>
+          <div>
+            <Link href="/aboutus">
+              
+                <button className="mt-6 bg-blue-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">
+                  learn more →
+                </button>
+              
+            </Link>
+          </div>
           
         </div>
       </section>
