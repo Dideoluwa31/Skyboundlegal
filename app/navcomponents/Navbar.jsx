@@ -76,22 +76,27 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden text-white shadow-md transition-all duration-300 bg-blue-900">
-          {["home", "about", "services", "contact", "sectors"].map((section) => (
-            <ScrollLink
-              key={section}
-              to={section}
-              smooth={true}
-              duration={800}
-              offset={-50}
-              className="cursor-pointer block px-4 py-2 hover:bg-blue-700"
-              onClick={() => setIsOpen(false)}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+          <div className="md:hidden text-white shadow-md transition-all duration-300 bg-blue-900">
+            <ScrollLink to="home" smooth={true} duration={800} offset={-50} className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
+              Home
             </ScrollLink>
-          ))}
-        </div>
-      )}
+            <ScrollLink to="about" smooth={true} duration={800} offset={-50} className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
+              About
+            </ScrollLink>
+            <ScrollLink to="services" smooth={true} duration={800} offset={-50} className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
+              Services
+            </ScrollLink>
+
+            {/* Mobile Contact Link */}
+            <Link href="/contactus" className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
+              Contact
+            </Link>
+
+            <ScrollLink to="sectors" smooth={true} duration={800} offset={-50} className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
+              Sectors
+            </ScrollLink>
+          </div>
+        )}
     </div>
 
     </nav>
