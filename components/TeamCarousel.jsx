@@ -12,31 +12,31 @@ const teamMembers = [
   {
     name: "MAQBOOL MALIK",
     role: "Principal Solicitor",
-    img: "/d-team/malik.png.jpg",
+    img: "/team-photo/Malik Maqbool.jpg",
     bio: "Experienced principal solicitor dedicated to providing top-tier legal solutions.",
   },
   {
     name: "RUFUS ILARA",
     role: "Solicitor",
-    img: "/d-team/ahmed.png.jpg",
+    img: "/team-photo/Rufus Ilara.jpg",
     bio: "Highly enthusiastic and client-focused lawyer, known for his dedication.",
   },
   {
     name: "MOHAMMED IBRAHIM IQBAL",
     role: "Trainee Solicitor",
-    img: "/d-team/iqbal.png.jpg",
+    img: "/team-photo/Mohammed Iqbal.jpg",
     bio: "Passionate about law and committed to serving clients with excellence.",
   },
   {
-    name: "MOHAMMED IBRAHIM IQBAL",
+    name: "SHERISSA CUPID",
     role: "Trainee Solicitor",
-    img: "/d-team/woman.png.jpg",
+    img: "/team-photo/Sherissa Cupid.jpg",
     bio: "Passionate about law and committed to serving clients with excellence.",
   },
   {
-    name: "MOHAMMED IBRAHIM IQBAL",
-    role: "Trainee Solicitor",
-    img: "/path-to-image3.jpg",
+    name: "AHMED BODLA",
+    role: "Legal Executive",
+    img: "/team-photo/Ahmed Bodla.jpg",
     bio: "Passionate about law and committed to serving clients with excellence.",
   },
   {
@@ -100,7 +100,7 @@ const TeamCarousel = () => {
               <Image
                 src={member.img}
                 alt={member.name}
-                className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-96 object-cover image-crisp transition-transform duration-500 group-hover:scale-110"
                 width={100}
                 height={100}>
               </Image>
