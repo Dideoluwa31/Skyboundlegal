@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import services from "@/data/sevices";
+import { useState, useEffect } from "react";
 
 const ServicesSection = () => {
   return (

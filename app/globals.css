@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url("/bg-imgs/legal.jpg") center/cover no-repeat;
+    background: url("/bg-imgs/travel pasport.jpeg") center/cover no-repeat;
   }
   
   /* Tailwind's bg-black/50 equivalent */
@@ -20,7 +20,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
   }
   
   .header-content {

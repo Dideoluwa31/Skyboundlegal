@@ -9,6 +9,7 @@ import Link from "next/link";
 export default function Navbar() {
   const [navBackground, setNavBackground] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobileLogoRotated, setIsMobileLogoRotated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,11 @@ export default function Navbar() {
     };
   }, []);
 
+  // Handle click rotation on mobile view
+  const handleMobileLogoClick = () => {
+    setIsMobileLogoRotated(!isMobileLogoRotated);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 
@@ -31,16 +37,21 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             {/* Logo and Brand Name Combined */}
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10">
+              {/* Logo with Desktop Hover Rotation */}
+              <div
+                className={`w-10 h-10 ${isMobileLogoRotated ? "rotate-360" : ""} 
+                transition-all duration-500 cursor-pointer`}
+                onClick={handleMobileLogoClick} // OnClick for mobile rotation
+              >
                 <Image 
                   src="/logo/skylogo.jpg" 
                   alt="logo" 
-                  width={40} 
-                  height={40} 
-                  className="object-contain rounded-full"
+                  width={50} 
+                  height={50} 
+                  className="object-contain rounded-full hover:rotate-180 transition-transform duration-500" // Hover for desktop rotation
                 />
               </div>
-              <h1 className="text-xl font-bold font-serif text-white">KYBOUND</h1>
+              <h1 className="text-lg font-bold font-serif text-white">KYBOUND</h1>
             </div>
 
             {/* Desktop Navigation */}

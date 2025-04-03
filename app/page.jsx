@@ -61,7 +61,7 @@ export default function HomePage() {
             {
               icon: <GoLaw className="h-12 w-12 text-white" />,
               title: "Quotation",
-              subtitle: "Get Free",
+              subtitle: "Get",
             },
             {
               icon: <LiaUsersSolid className="h-12 w-12 text-white" />,
