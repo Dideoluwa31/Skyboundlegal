@@ -29,26 +29,21 @@ export default function Navbar() {
       <div className="container mx-auto p-4">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex justify-between items-center">
-            
-            {/* Logo with Hover Rotation */}
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-white rounded-full flex justify-center items-center cursor-pointer transition-transform duration-500 hover:rotate-360">
+            {/* Logo and Brand Name Combined */}
+            <div className="flex items-center space-x-2">
+              <div className="w-10 h-10">
                 <Image 
                   src="/logo/skylogo.jpg" 
-                  className="rounded-full" 
+                  alt="logo" 
                   width={40} 
                   height={40} 
-                  alt="logo" 
+                  className="object-contain rounded-full"
                 />
               </div>
+              <h1 className="text-xl font-bold font-serif text-white">KYBOUND</h1>
             </div>
 
-            {/* Centered Brand Name */}
-            <div className="flex-grow text-center">
-              <h1 className="text-xl font-bold font-serif text-white">SKYBOUND</h1>
-            </div>
-
-            {/* Desktop Navigation at the End */}
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-6 text-white">
               <ScrollLink to="home" smooth={true} duration={800} offset={-50} className="cursor-pointer hover:text-blue-300">
                 Home
@@ -86,12 +81,9 @@ export default function Navbar() {
             <ScrollLink to="services" smooth={true} duration={800} offset={-50} className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
               Services
             </ScrollLink>
-
-            {/* Mobile Contact Link */}
             <Link href="/contactus" className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
-
             <ScrollLink to="sectors" smooth={true} duration={800} offset={-50} className="cursor-pointer block px-4 py-2 hover:bg-blue-700" onClick={() => setIsOpen(false)}>
               Sectors
             </ScrollLink>

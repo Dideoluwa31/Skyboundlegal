@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -137,6 +138,13 @@ const ContactUs = () => {
             </button>
           </form>
         </div>
+      </div>
+      <div className="mt-8 text-center">
+        <Link href="/">
+          <button className="bg-blue-900 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+            ← Back to Home
+          </button>
+        </Link>
       </div>
     </div>
   );

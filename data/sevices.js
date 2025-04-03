@@ -13,7 +13,7 @@ const services = [
     },
     {
       title: "Criminal Litigation",
-      description: "Led by Mr. Maqbool Malik, who is accredited for police station advice, our criminal department will build a robust defence in cases regarding white-collar crime.",
+      description: "Our criminal defense attorneys have a proven track record of success in defending individuals and organizations against a wide range of criminal charges, from misdemeanors to felonies.",
     },
     {
       title: "personal Injury",
@@ -21,7 +21,7 @@ const services = [
     },
     {
       title: " commercial Services",
-      description: "Led by Mr. Maqbool Malik, who is accredited for police station advice, our criminal department will build a robust defence in cases regarding white-collar crime.",
+      description: "Our commercial services are designed to help you overcome challenges, capitalize on opportunities, and achieve sustainable growth. Explore our services today and discover a better way to do business.",
     },
   ];
   export default services;
