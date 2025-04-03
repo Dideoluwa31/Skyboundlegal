@@ -16,34 +16,31 @@ const teamMembers = [
     bio: "Experienced principal solicitor dedicated to providing top-tier legal solutions.",
   },
   {
-    name: "RUFUS ILARA",
+    name: "RUFUS OLAYEMI ILARA",
     role: "Solicitor",
-    img: "/team-photo/Rufus Ilara.jpg",
-    bio: "Highly enthusiastic and client-focused lawyer, known for his dedication.",
+    img: "/team-photo/Idowu Ilara.jpg",
+   
   },
   {
     name: "MOHAMMED IBRAHIM IQBAL",
     role: "Trainee Solicitor",
     img: "/team-photo/Mohammed Iqbal.jpg",
-    bio: "Passionate about law and committed to serving clients with excellence.",
+   
   },
   {
     name: "SHERISSA CUPID",
     role: "Trainee Solicitor",
     img: "/team-photo/Sherissa Cupid.jpg",
-    bio: "Passionate about law and committed to serving clients with excellence.",
   },
   {
     name: "AHMED BODLA",
     role: "Legal Executive",
     img: "/team-photo/Ahmed Bodla.jpg",
-    bio: "Passionate about law and committed to serving clients with excellence.",
   },
   {
-    name: "MOHAMMED IBRAHIM IQBAL",
-    role: "Trainee Solicitor",
-    img: "/",
-    bio: "Passionate about law and committed to serving clients with excellence.",
+    name: "SARA HUSSAIN",
+    role: "Solicitor",
+    img: "/team-photo/Sara Hussian.jpg",
   },
 ];
 
@@ -64,6 +61,25 @@ const TeamCarousel = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 relative">
       
+      {/* Malik's standalone image */}
+      <div className="mb-8 text-center">
+        <div className="relative overflow-hidden rounded-lg shadow-lg mx-auto w-full max-w-lg brightness-110">
+          <Image
+            src={teamMembers[0].img}
+            alt={teamMembers[0].name}
+            className="w-full h-[500px] object-cover"
+            width={400}
+            height={500}
+            priority
+          />
+        </div>
+        <h3 className="text-gray-900 text-xl font-semibold mt-4">
+          {teamMembers[0].name}
+        </h3>
+        <p className="text-gray-700 text-sm">{teamMembers[0].role}</p>
+      </div>
+
+      {/* Navigation Buttons */}
       <button
         ref={prevRef}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue-100 text-gray-900 p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
@@ -78,6 +94,7 @@ const TeamCarousel = () => {
         <FaChevronRight />
       </button>
 
+      {/* Swiper for the rest of the team */}
       <Swiper
         ref={swiperRef}
         modules={[Navigation, Pagination]}
@@ -93,21 +110,20 @@ const TeamCarousel = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)} 
         className="relative"
       >
-        {teamMembers.map((member, index) => (
-          <SwiperSlide key={index} className="relative group">
-            <div className="relative overflow-hidden rounded-lg shadow-lg">
+        {teamMembers.slice(1).map((member, index) => (
+          <SwiperSlide key={index} className="relative">
+            <div className="relative overflow-hidden rounded-lg shadow-lg brightness-110">
               <Image
                 src={member.img}
                 alt={member.name}
-                className="w-full h-96 object-cover image-crisp transition-transform duration-500 group-hover:scale-110"
-                width={100}
-                height={100}>
-              </Image>
-              <div className="absolute inset-0 bg-gray-200 bg-opacity-70 flex flex-col items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h3 className="text-gray-900 text-xl font-semibold">{member.name}</h3>
-                <p className="text-gray-700 text-sm">{member.role}</p>
-                <p className="text-gray-700 mt-2">{member.bio}</p>
-              </div>
+                className="w-full h-[500px] object-cover"
+                width={400}
+                height={500}
+              />
+            </div>
+            <div className="text-center mt-4">
+              <h3 className="text-blue-900 text-xl font-semibold">{member.name}</h3>
+              <p className="text-gray-700 text-sm">{member.role}</p>
             </div>
           </SwiperSlide>
         ))}

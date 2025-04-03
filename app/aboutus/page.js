@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Navbar from "../navcomponents/Navbar";
 
 const AboutUs = () => {
   const [animate, setAnimate] = useState(false);

@@ -37,10 +37,12 @@ export default function HomePage() {
             <div className="header-overlay"></div>
             <div className="header-content">
               <h1 className="header-title">Transform Your Business with Our Expert Solutions</h1>
-              <p className="mt-4 text-lg">Every Case, Every Time</p>
-              <button className="header-button">
-                Get Evaluation
-              </button>
+              
+              <Link href="/contactus" className="cursor-pointer hover:text-blue-300">
+                <button className="header-button">
+                  Get Evaluation
+                </button>
+              </Link>
             </div>
           </header>
         </div>
@@ -98,14 +100,7 @@ export default function HomePage() {
         <div className="md:w-1/2 mt-6 md:mt-0 md:pl-12 text-center md:text-left">
           <h2 className="text-3xl font-semibold text-blue-900">About Us</h2>
           <p className="text-gray-600 mt-4">
-          Client satisfaction comes first at Skybound International Solicitors and Legal Services. Our expert
-          solicitors stay up-to-date to offer unparalleled service in
-          immigration, family, civil litigation, and criminal matters.
-          </p>
-          <p className="text-gray-600 mt-4">
-          Led by our seasoned principal solicitor,Our team boasts
-          25+ years of experience, tackling the toughest cases with victorious
-          outcomes.
+          We are a team of experienced and dedicated legal professionals committed to providing exceptional representation and counsel to individuals, business and institutions. With years of experience and a proven track record of success, our attorneys are dedicated to helping clients navigate the complexities of the law and achieve their goals.
           </p>
           <div>
             <Link href="/aboutus">
