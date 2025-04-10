@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link"; 
+import Footer from "@/components/footer";
 
 const sectors = [
   {
@@ -46,9 +47,17 @@ const sectors = [
 
 export default function SectorList ()  {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 py-12 px-6">
+    <div>
+      <div 
+        className="relative bg-cover h-64 flex justify-center items-center bg-center text-white py-16" 
+        style={{ backgroundImage: "url('/bg-imgs/skyscraper.png')" }}
+      >
+        <div className="absolute inset-0 bg-black/80"></div>
+        <h1 className="text-blue-400 text-3xl font-bold relative z-10">Our Key Practice Sectors</h1>
+      </div>
+      <div className="min-h-screen bg-gray-100 text-gray-900 py-12 px-6">
+      
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-6">Our Key Practice Sectors</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {sectors.map((sector, index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg p-6">
@@ -64,6 +73,10 @@ export default function SectorList ()  {
             </button>
           </Link>
         </div>
+      </div>
+    </div>
+    <div>
+      <Footer />
       </div>
     </div>
   );

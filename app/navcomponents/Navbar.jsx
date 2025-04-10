@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 
-      ${navBackground ? "bg-blue-900 shadow-md" : "bg-black bg-cover bg-center"}`}
+      ${navBackground ? "bg-blue-900 shadow-md" : "bg-[] bg-cover bg-center"}`}
     >
       <div className="container mx-auto p-4">
         <div className="max-w-5xl mx-auto px-4">
@@ -46,8 +46,8 @@ export default function Navbar() {
                 <Image 
                   src="/logo/skylogo.jpg" 
                   alt="logo" 
-                  width={50} 
-                  height={50} 
+                  width={100} 
+                  height={100} 
                   className="object-contain rounded-full hover:rotate-180 transition-transform duration-500" // Hover for desktop rotation
                 />
               </div>

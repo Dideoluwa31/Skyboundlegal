@@ -24,7 +24,7 @@ export default function HomePage() {
  return (
   <div>
     <div>
-      <div className="h-screen bg-img-homepage">
+      <div className="h-[70vh] bg-img-homepage">
         <div className="w-full min-h-screen bg-gray-100">
           
           <div>
@@ -36,7 +36,7 @@ export default function HomePage() {
           <header className="header">
             <div className="header-overlay"></div>
             <div className="header-content">
-              <h1 className="header-title">Transform Your Business with Our Expert Solutions</h1>
+              <h1 className="header-title font-serif">Transforming Lives Through Immigration Solutions</h1>
               
               <Link href="/contactus" className="cursor-pointer hover:text-blue-300">
                 <button className="header-button">
