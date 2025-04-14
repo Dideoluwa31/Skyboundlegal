@@ -55,7 +55,7 @@ const ContactUs = () => {
           </p>
 
           <p className="text-gray-700 mt-2">
-            <span className="font-bold">📞 Tel:</span> +234 9167610059
+            <span className="font-bold">📞 Tel:</span> +234 9167610059, +44 7405328200, +44 7301960790
           </p>
 
           <p className="text-gray-700 mt-2">

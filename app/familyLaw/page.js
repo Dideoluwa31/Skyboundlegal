@@ -1,66 +1,38 @@
 "use client";
+import React from "react";
 import Link from "next/link"; 
+import Image from "next/image";
 import Footer from "@/components/footer";
 
-const sectors = [
-  {
-    name: "DIVORCE",
-    topic:
-      "Your Path to a New Beginning",
-    description:"Compassionate and experienced divorce attorneys dedicated to helping you achieve a fair and equitable outcome"
-  },
-  {
-    name: "CHILD CONTACT",
-    topic:
-      "Your Child's Best Interests, Our Top Priority",
-    description:"Compassionate and experienced child contact services to help you resolve disputes and create a stable environment for your child",
-  },
-  {
-    name: "FINANCIAL REMEDY",
-    topic:
-      "",
-    description:"Expert asylum services to help individuals fleeing persecution find protection and a new beginning"
-  },
-  {
-    name: "INJUNCTION",
-    topic:
-      "Navigating the Complexities of Business Immigration",
-    description:"Expert guidance and support to help you overcome the challenges of global mobility and talent acquisition."
-  },
-  
-];
 
-export default function SectorList ()  {
+const Criminal = () => {
   return (
     <div>
-      <div 
-        className="relative bg-cover h-64 flex justify-center items-center bg-center text-white py-16" 
-        style={{ backgroundImage: "url('/random/family law.jpeg')" }}
-      >
-        <div className="absolute inset-0 bg-black/60"></div>
-        <h1 className="text-white text-3xl font-bold relative z-10">FAMILY LAW</h1>
-      </div>
-      <div className="min-h-screen bg-gray-100 text-gray-900 py-12 px-6">
-      
-      <div className="max-w-5xl mx-auto ">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {sectors.map((sector, index) => (
-                <div key={index} className="bg-blue-900 shadow-lg rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-2 text-black">{sector.name}</h3>
-                <p className="text-900 font-semibold text-lg">{sector.topic}</p>
-                <p className="text-white">{sector.description}</p>
-                </div>
-            ))}
-            </div>
-            <div className="mt-8 text-center">
-            <Link href="/"> 
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
-                ← Back to Home
-                </button>
-            </Link>
-            </div>
-        </div>
+    <div 
+      className="relative bg-cover h-64 flex justify-center items-center bg-center text-white py-16" 
+      style={{ backgroundImage: "url('/random/family law.jpeg')" }}
+    >
+      <div className="absolute inset-0 bg-black/80"></div>
+      <h1 className="text-white text-3xl font-bold relative z-10">FAMILY LAW</h1>
     </div>
+    <section className="bg-[#f9f6f2] p-6 items-center justify-center">
+      <div className="mt-6 md:mt-0 md:pl-12 text-center md:text-left shadow-lg rounded-lg p-6">
+        <p className="text-black mt-4 text-lg font-semibold"> Why Choose Us?</p>
+        <p className="text-gray-600 mt-4 text-lg">
+          At Skybound, we understand the complexities and challenges of family law. Our experienced team of attorneys is dedicated to providing expert guidance and representation to individuals and families navigating the complexities of family law. We believe that every family is unique, and we are committed to helping our clients achieve their goals and protect their rights.
+          Our Mission
+          Our mission is to provide exceptional family law services to our clients, ensuring that they receive the best possible advice and representation. We strive to create a personalized and tailored approach to each client's case, taking into account their unique circumstances and goals. Our goal is to empower our clients with the knowledge and support they need to navigate the family law system.
+        </p>
+      </div>
+    </section>
+      <div className="justify-center item-center">
+        <Link href="/">
+            <button className="mt-6 bg-blue-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg justify-center">
+              Back to Home →
+            </button>
+          
+        </Link>
+      </div>
     <div>
       <Footer />
       </div>
@@ -68,4 +40,4 @@ export default function SectorList ()  {
   );
 };
 
-
+export default Criminal;

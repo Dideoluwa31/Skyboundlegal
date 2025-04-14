@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaLinkedinIn, FaFacebookF, FaXTwitter, FaInstagram, FaArrowUp } from "react-icons/fa6";
+import { FaLinkedinIn, FaFacebookF, FaXTwitter, FaInstagram, FaArrowUp, FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -36,6 +36,9 @@ const Footer = () => {
         </Link>
         <Link href="https://www.instagram.com/skyboundlegal?igsh=MTZub2d2NjJpdzBvaA==" className="bg-gray-800 p-2 rounded-lg text-white hover:bg-gray-700">
           <FaInstagram />
+        </Link>
+        <Link href="https://wa.me//+2349167610059" className="bg-gray-800 p-2 rounded-lg text-white hover:bg-gray-700">
+          <FaWhatsapp />
         </Link>
       </div>
       {showScroll && (
