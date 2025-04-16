@@ -20,10 +20,7 @@ const Criminal = () => {
         <p className="text-black mt-4 text-lg font-semibold"> Why Choose Us?</p>
         <p className="text-gray-600 mt-4 text-lg">
        
-        We are committed to providing exceptional service and expert representation to our clients. Here are just a few reasons why you should choose us:
- Experience: Our attorneys have extensive experience in criminal law, with a deep understanding of the complexities and nuances of the criminal justice system.
-        - Personalized Service: We provide personalized and tailored advice and representation to each client, taking into account their unique circumstances and goals.
-        - Results: We have a proven track record of success, with many clients achieving favorable outcomes in their cases.
+        At Skybound, our experienced civil litigation attorneys are dedicated to helping individuals, businesses, and organizations navigate the complexities of civil disputes. Whether you're facing a contract dispute, or other civil matter, our team is here to provide expert guidance and representation.
         </p>
       </div>
     </section>

@@ -17,7 +17,7 @@ const teamMembers = [
   },
   {
     name: "RUFUS OLAYEMI ILARA",
-    role: "Solicitor",
+    role: "Barrister and Solicitor",
     img: "/team-photo/Idowu Ilara.jpg",
    
   },
