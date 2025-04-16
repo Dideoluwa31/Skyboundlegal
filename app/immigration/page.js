@@ -20,10 +20,11 @@ const Criminal = () => {
         <p className="text-black mt-4 text-lg font-semibold"> Why Choose Us?</p>
         <p className="text-gray-600 mt-4 text-lg">
        
-        We are committed to providing exceptional service and expert representation to our clients. Here are just a few reasons why you should choose us:
- Experience: Our attorneys have extensive experience in criminal law, with a deep understanding of the complexities and nuances of the criminal justice system.
-        - Personalized Service: We provide personalized and tailored advice and representation to each client, taking into account their unique circumstances and goals.
-        - Results: We have a proven track record of success, with many clients achieving favorable outcomes in their cases.
+        At Skybound, we understand the complexities and challenges of navigating the immigration system. Our experienced immigration lawyers are dedicated to providing personalized and effective solutions to help individuals, families, and businesses achieve their immigration goals.
+        <br></br>
+        Let Us Help You
+
+Whether you're seeking to reunite with family, pursue new opportunities, or build a better life, our immigration lawyers are here to guide you every step of the way. Contact us today to schedule a consultation and take the first step towards a brighter future.
         </p>
       </div>
     </section>
