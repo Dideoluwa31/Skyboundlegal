@@ -27,7 +27,7 @@ const services = [
     {
       title: " Commercial Services",
       description: "Our commercial services are designed to help you overcome challenges, capitalize on opportunities, and achieve sustainable growth. Explore our services today and discover a better way to do business.",
-      href:"/criminal"
+      href:"/commercial"
     },
   ];
   export default services;

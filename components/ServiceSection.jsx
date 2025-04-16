@@ -33,7 +33,11 @@ const ServicesSection = () => {
                 whileHover={{ x: 10 }} 
               >
                 <div className="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full">
-                  <FaArrowRight className="text-gray-600" />
+                  <Link href={service.href}>
+                    <div className="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full hover:bg-blue-100 transition">
+                      <FaArrowRight className="text-gray-600 group-hover:text-blue-700" />
+                    </div>
+                  </Link>
                 </div>
               </motion.div>
             </div>
@@ -45,15 +49,6 @@ const ServicesSection = () => {
                 <span className="block w-16 md:w-24 h-[3px] bg-blue-500 mx-auto mt-1"></span>
               </h4>
               <p className="text-gray-600 mt-2">{service.description}</p>
-              <div className="mt-2 space-y-1">
-                  <p >
-                    <Link href={service.href} className="text-white underline hover:text-blue-300">
-                      <button className="mt-6 bg-blue-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">
-                        learn more →
-                      </button>
-                    </Link>
-                  </p>
-              </div>
             </div>
             
           </motion.div>

@@ -20,9 +20,20 @@ const Criminal = () => {
         <p className="text-black mt-4 text-lg font-semibold"> Why Choose Us?</p>
         <p className="text-gray-600 mt-4 text-lg">
           At Skybound, we understand the complexities and challenges of family law. Our experienced team of attorneys is dedicated to providing expert guidance and representation to individuals and families navigating the complexities of family law. We believe that every family is unique, and we are committed to helping our clients achieve their goals and protect their rights.
-          Our Mission
+          <br></br>
           Our mission is to provide exceptional family law services to our clients, ensuring that they receive the best possible advice and representation. We strive to create a personalized and tailored approach to each client's case, taking into account their unique circumstances and goals. Our goal is to empower our clients with the knowledge and support they need to navigate the family law system.
         </p>
+      </div>
+    </section>
+    <section className="bg-white shadow-lg p-6 mt-10">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl text-blue-900 font-bold mb-4">Family Law</h2>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Divorce and Separation</li>
+          <li>Child Contact and Custody</li>
+          <li>Family Hearings</li>
+          <li>Financial Remedy Proceedings</li>
+        </ul>
       </div>
     </section>
       <div className="justify-center item-center">

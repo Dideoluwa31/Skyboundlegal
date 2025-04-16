@@ -27,6 +27,16 @@ const Criminal = () => {
         </p>
       </div>
     </section>
+    <section className="bg-white shadow-lg p-6 mt-10">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl text-blue-900 font-bold mb-4">Criminal Litigation</h2>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Police Station Representations </li>
+          <li>Serious and General Crime </li>
+          <li>Motoring Offences</li>
+        </ul>
+      </div>
+    </section>
       <div className="justify-center item-center">
         <Link href="/">
             <button className="mt-6 bg-blue-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg justify-center">
