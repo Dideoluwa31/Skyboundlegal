@@ -31,7 +31,7 @@ export default function HomePage() {
         <meta name="description" content="Helping you navigate Immigration & Family Law | Expert Legal & Commercial Services | Solicitor | Proudly serving clients in Nigeria, UK & beyond" />
         <meta property="og:title" content="SKYBOUND INTERNATIONAL SOLICITOR AND LEGAL SERVICE" />
         <meta property="og:description" content="Helping you navigate Immigration & Family Law | Expert Legal & Commercial Services | Solicitor | Proudly serving clients in Nigeria, UK & beyond" />
-        <meta property="og:image" content="/favicon.ico"/>
+        <meta property="og:image" content="/logo/skylogo.jpg"/>
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
