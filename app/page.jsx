@@ -25,48 +25,18 @@ export default function HomePage() {
   ];
  return (
   <div>
-    <Head>
-  <title>Skybound International Solicitor and Legal Services</title>
-  <meta 
-    name="description" 
-    content="Skybound International Solicitor and Legal Services provides expert legal representation, immigration law services, and client-focused legal solutions across Nigeria and beyond." 
-  />
-  <meta 
-    name="keywords" 
-    content="Skybound International Solicitor and Legal Services, immigration law, immigration services, solicitors, legal services, law firm, Nigeria lawyers, visa assistance" 
-  />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Skybound International Solicitor and Legal Services" />
-  <meta property="og:description" content="Offering trusted legal and immigration law services for individuals, families, and businesses." />
-  <meta property="og:image" content="https://skyboundsolicitor.com/logo/skylogo.jpg" />
-  <meta property="og:url" content="https://skyboundsolicitor.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="/favicon.ico" />
+    
+      <Head>
+        <title>SKYBOUND INTERNATIONAL SOLICITOR AND LEGAL SERVICE</title>
+        <meta name="description" content="Helping you navigate Immigration & Family Law | Expert Legal & Commercial Services | Solicitor | Proudly serving clients in Nigeria, UK & beyond" />
+        <meta property="og:title" content="SKYBOUND INTERNATIONAL SOLICITOR AND LEGAL SERVICE" />
+        <meta property="og:description" content="Helping you navigate Immigration & Family Law | Expert Legal & Commercial Services | Solicitor | Proudly serving clients in Nigeria, UK & beyond" />
+        <meta property="og:image" content="/favicon.ico"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "LegalService",
-        "name": "Skybound International Solicitor and Legal Services",
-        "url": "https://skyboundsolicitor.com",
-        "logo": "https://skyboundsolicitor.com/logo/skylogo.jpg",
-        "description": "Skybound International Solicitor and Legal Services offers immigration law services, legal representation, and client-centered solutions with integrity and professionalism.",
-        "areaServed": "NG",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+234-916-7610-059",
-          "contactType": "Customer Service"
-        },
-        "sameAs": [
-          "https://x.com/skyboundlegal",
-          "https://instagram.com/skyboundlegal"
-        ]
-      })
-    }}
-  />
-</Head>
 
     <div>
       <div className="h-[70vh] bg-img-homepage">
