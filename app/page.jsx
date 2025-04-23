@@ -2,12 +2,10 @@
 import React from "react";
 import ServicesSection from "@/components/ServiceSection";
 import services, {sevices} from "../data/sevices"
-import Navbar from "./navcomponents/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { LiaUserTieSolid } from "react-icons/lia";
 import { GoLaw } from "react-icons/go";
-import Footer from "../components/Footer";
 import TeamCarousel from "../components/TeamCarousel"
 import { LiaUsersSolid } from "react-icons/lia";
 import WhoWeServe from "../components/WhoWeServe";
@@ -80,9 +78,6 @@ export default function HomePage() {
       <div className="h-[70vh] bg-img-homepage">
         <div className="w-full min-h-screen bg-gray-100">
           
-          <div>
-              <Navbar />
-          </div>
 
            
           
