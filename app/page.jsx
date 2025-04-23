@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LiaUserTieSolid } from "react-icons/lia";
 import { GoLaw } from "react-icons/go";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import TeamCarousel from "../components/TeamCarousel"
 import { LiaUsersSolid } from "react-icons/lia";
 import WhoWeServe from "../components/WhoWeServe";
@@ -190,9 +190,7 @@ export default function HomePage() {
             </div>
           </section>
         </div>
-    <div>
-      <Footer />
-      </div>
+    
   </div>
 
     

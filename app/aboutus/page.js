@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 
 const AboutUs = () => {
   const [animate, setAnimate] = useState(false);
@@ -62,11 +62,9 @@ const AboutUs = () => {
           </Link>
         </div>
       </div>
-      <div>
-      <Footer />
-      </div>
-    </div>
+        </div>
   );
 };
 
 export default AboutUs;
+ 

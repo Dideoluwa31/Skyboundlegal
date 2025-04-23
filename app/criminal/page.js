@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link"; 
 import Image from "next/image";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 
 
 const Criminal = () => {
@@ -44,9 +44,6 @@ const Criminal = () => {
             </button>
           
         </Link>
-      </div>
-    <div>
-      <Footer />
       </div>
     </div>
   );
