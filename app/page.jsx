@@ -61,7 +61,7 @@ export default function HomePage() {
                             "name": "United Kingdom" 
                           }],
             "contactPoint": {
-              "@type": "ContactPoint",
+               "@type": "ContactPoint",
               "telephone": "+234-916-7610-059",
               "contactType": "Customer Service"
             },
