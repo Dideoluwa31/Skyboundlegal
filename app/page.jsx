@@ -11,7 +11,8 @@ import { LiaUsersSolid } from "react-icons/lia";
 import WhoWeServe from "../components/WhoWeServe";
 import {motion} from "framer-motion"
 import Head from 'next/head';
-
+import HeroCarousel from "@/components/HeroCarousel";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 
 
@@ -75,28 +76,7 @@ export default function HomePage() {
 
 
     <div>
-      <div className="h-[70vh] bg-img-homepage">
-        <div className="w-full min-h-screen bg-gray-100">
-          
-
-           
-          
-          <header className="header">
-            <div className="header-overlay"></div>
-            <div className="header-content">
-              <h1 className="header-title font-serif">Transforming Lives Through Immigration Solutions</h1>
-              
-              <Link href="/contactus" className="cursor-pointer hover:text-blue-300">
-                <button className="header-button">
-                  Get Evaluation
-                </button>
-              </Link>
-            </div>
-          </header>
-        </div>
-      </div>
-    
-    
+      <HeroCarousel />
       </div>
       <section className="bg-gray-100 py-8 px-4 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -184,6 +164,9 @@ export default function HomePage() {
               <TeamCarousel />
             </div>
           </section>
+        </div>
+        <div>
+        <TestimonialCarousel />
         </div>
     
   </div>
