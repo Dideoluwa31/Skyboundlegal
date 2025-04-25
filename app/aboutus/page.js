@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 
+
 const AboutUs = () => {
   const [animate, setAnimate] = useState(false);
 
@@ -62,7 +63,7 @@ const AboutUs = () => {
           </Link>
         </div>
       </div>
-        </div>
+    </div>
   );
 };
 

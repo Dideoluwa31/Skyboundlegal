@@ -95,7 +95,7 @@ export default function HeroCarousel() {
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1.05, opacity: 1 }}
           exit={{ scale: 1, opacity: 0 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1.5 }}
         >
           <div className="absolute inset-0 bg-black/70" />
         </motion.div>
