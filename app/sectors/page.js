@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link"; 
+import Footer from "@/components/Footer";
 
 
 const sectors = [
@@ -74,6 +75,9 @@ export default function SectorList ()  {
           </Link>
         </div>
       </div>
+    </div>
+    <div>
+       <Footer />
     </div>
     </div>
   );

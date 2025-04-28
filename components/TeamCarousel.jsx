@@ -42,6 +42,21 @@ const teamMembers = [
     role: "Solicitor",
     img: "/team-photo/Sara Hussian.jpg",
   },
+  {
+    name: "EBENEZER OLUFUNSO",
+    role: "Solicitor",
+    img: "/team-photo/Sara Hussian.jpg",
+  },
+  {
+    name: "ABIOYE OLUWAFUNKE",
+    role: "Solicitor",
+    img: "/team-photo/Sara Hussian.jpg",
+  },
+  {
+    name: "ASUBIOJO OREOLUWA",
+    role: "Solicitor",
+    img: "/team-photo/Sara Hussian.jpg",
+  },
 ];
 
 const TeamCarousel = () => {
