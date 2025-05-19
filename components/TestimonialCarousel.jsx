@@ -9,25 +9,25 @@ const testimonials = [
     name: "U.D",
     role: "Client",
     message:
-      "Skybound Legal are the best at what they do. Diligent, trustworthy, and truly care about their clients. I recommend them highly!",
+      "Thank you for helping me with my visa application. The process was smooth and everyone was very professional. I highly recommend SKYBOUND to anyone who needs help with immigration",
   },
   {
     name: "F.A",
     role: "Client",
     message:
-      "They helped my family through a tough immigration case. Forever grateful. Professionals with heart.",
+      "My husband and I are so grateful for your support. You answered all our questions and made a stressful process much easier. Now we can live our dream in a new country",
   },
   {
     name: "E.O",
-    role: "Business Owner",
+    role: "Client",
     message:
-      "Great legal minds. They made my corporate registration seamless. Highly recommended!",
+      "I was worried about my complicated case, but the team explained everything clearly and guided me step by step. I got my permit, and I am so happy I chose this company.",
   },
   {
     name: "O.O",
     role: "Immigration Client",
     message:
-      "Thanks to Skybound, I’m now with my family. They fought for me like family.",
+      "The staff was always quick to reply and very helpful. They made sure I had all the documents I needed and kept me calm during the waiting period. Now I am reunited with my family",
   },
   {
     name: "O.A",

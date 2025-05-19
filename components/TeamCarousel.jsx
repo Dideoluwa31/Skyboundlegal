@@ -16,6 +16,12 @@ const teamMembers = [
     bio: "Experienced principal solicitor dedicated to providing top-tier legal solutions.",
   },
   {
+    name: "PRINCE IDOWU ILARA",
+    role: "FSM",
+    img: "/team-photo/CHAIRMAN.jpg",
+    bio: "Experienced principal solicitor dedicated to providing top-tier legal solutions.",
+  },
+  {
     name: "RUFUS OLAYEMI ILARA",
     role: "Barrister and Solicitor",
     img: "/team-photo/Idowu Ilara.jpg",

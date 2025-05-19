@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -146,9 +145,6 @@ const ContactUs = () => {
             ← Back to Home
           </button>
         </Link>
-      </div>
-      <div>
-       <Footer />
       </div>
     </div>
   );

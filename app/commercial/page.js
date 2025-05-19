@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link"; 
-import Footer from "@/components/Footer";
 
 
 const Criminal = () => {
@@ -40,9 +39,6 @@ const Criminal = () => {
               Back to Home →
             </button>
         </Link>
-      </div>
-      <div>
-       <Footer />
       </div>
     </div>
   );

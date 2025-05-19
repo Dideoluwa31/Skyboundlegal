@@ -42,7 +42,7 @@ export default function HomePage() {
       <meta property="og:url" content="https://skyboundsolicitor.com" />
       <meta name="twitter:card" content="summary_large_image" />
       <link rel="icon" href="/favicon.ico" />
-
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

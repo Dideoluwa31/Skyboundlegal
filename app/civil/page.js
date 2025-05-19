@@ -44,9 +44,6 @@ const Criminal = () => {
         </Link>
         
       </div>
-      <div>
-       <Footer />
-      </div>
     </div>
   );
 };
